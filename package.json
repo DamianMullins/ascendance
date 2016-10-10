@@ -1,0 +1,35 @@
+{
+  "name": "ascendance",
+  "version": "1.0.0",
+  "description": "Split your checkbox lists into two",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "watch:test": "ava --watch",
+    "test:coverage": "nyc ava",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamianMullins/ascendance.git"
+  },
+  "author": "Damian Mullins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DamianMullins/ascendance/issues"
+  },
+  "homepage": "https://github.com/DamianMullins/ascendance#readme",
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "browser-env": "^2.0.9",
+    "coveralls": "^2.11.14",
+    "nyc": "^8.3.1"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "./test/helpers/setup-browser-env.js"
+    ],
+    "verbose": true
+  }
+}
