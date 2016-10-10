@@ -31,5 +31,10 @@
       "./test/helpers/setup-browser-env.js"
     ],
     "verbose": true
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ]
   }
 }
